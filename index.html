@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary': '#0xFFFF4240',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/24b59d6ef8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">Hockey's</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-primary bg-primary text-white">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+    <!-- carousel -->
+    <div class="carousel w-[1170px] h-[550px] top-157px left-135px">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="..//images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="trophy.jpg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <main>
+    <h1 align="center" class="text-3xl text-primary">Professional Hockey Clubs</h1>
+    <p align="center" class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae eligendi, aliquam dignissimos
+      accusamus reiciendis bjreb ipsum rgetx fiolv oiuy gtx nulla explicabo totam.</p>
+    <br>
+    <br>
+    <br>
+    <div align="center" class="flex justify-center items-center gap-5">
+      <div class="radial-progress text-info" style="--value:80;" role="progressbar">87%</div>
+      <h4 class="text-2xl text-info">Player Facility</h4>
+      <div class="radial-progress text-accent" style="--value:95;" role="progressbar">95%</div>
+      <h4 class="text-2xl text-accent">Player Facility</h4>
+      <div class="radial-progress text-error" style="--value:90;" role="progressbar">90%</div>
+      <h4 class="text-2xl text-error">Player Facility</h4>
+      <div class="radial-progress text-warning" style="--value:80;" role="progressbar">80%</div>
+      <h4 class="text-2xl text-warning">Player Facility</h4>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="flex gap-5 justify-center">
+      <div class="card w-96 bg-base-100 shadow-xl image-full">
+        <figure><img src="../images/2.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title text-white">Junior Program</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, est. Eveniet et aspernatur nostrum vitae?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-secondary">Rejister Now!</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card w-96 bg-base-100 shadow-xl image-full">
+        <figure><img src="../images/3.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title text-white">Teenager Program</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sed dolores sunt suscipit et reprehenderit!
+          </p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-secondary">Register Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="flex justify-center">
+      <div class="card w-[800px] bg-base-100 shadow-xl image-full">
+        <figure><img src="../images/4.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title text-white">Professional Program</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa ipsam, dignissimos reprehenderit
+            debitis
+            laborum.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-secondary">Register Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h1 class="flex justify-center text-3xl">Our New Projects</h1>
+    <p align="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum dignissimos quo sint mollitia,
+      error optio aspernatur deleniti accusamus eligendi exercitationem quis molestias eaque odio consequatur, eos.</p>
+    <br>
+    <div class="grid grid-cols-2 ">
+      <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/5.png" alt="Jersey" /></figure>
+        <div class="flex justify-center items-center gap-2">
+          <i class="fa-solid fa-star text-secondary"></i>
+          <div>
+            <h4 class="text-white">5.0</h4>
+          </div>
+
+          <i class="fa-regular fa-eye text-secondary"></i>
+          <h4 class="text-white">20</h4>
+
+          <i class="fa-regular fa-heart text-secondary"></i>
+          <h4 class="text-white">250</h4>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">World Cup American-Football</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, veritatis.</p>
+          <div class="card-actions justify-end">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/6.png" alt="Shoes" /></figure>
+        <div class="flex justify-center items-center gap-2">
+          <i class="fa-solid fa-star text-secondary"></i>
+          <div>
+            <h4 class="text-white">5.0</h4>
+          </div>
+
+          <i class="fa-regular fa-eye text-secondary"></i>
+          <h4 class="text-white">20</h4>
+
+          <i class="fa-regular fa-heart text-secondary"></i>
+          <h4 class="text-white">250</h4>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">World Cup Football Icon</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, necessitatibus Vero.</p>
+          <div class="card-actions justify-end">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/7.png" alt="Shoes" /></figure>
+        <div class="flex justify-center items-center gap-2">
+          <i class="fa-solid fa-star text-secondary"></i>
+          <div>
+            <h4 class="text-white">5.0</h4>
+          </div>
+
+          <i class="fa-regular fa-eye text-secondary"></i>
+          <h4 class="text-white">20</h4>
+
+          <i class="fa-regular fa-heart text-secondary"></i>
+          <h4 class="text-white">250</h4>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Hockey Cap</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laudantium!</p>
+          <div class="card-actions justify-end">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/8.png" alt="Shoes" /></figure>
+        <div class="flex justify-center items-center gap-2">
+          <i class="fa-solid fa-star text-secondary"></i>
+          <div>
+            <h4 class="text-white">5.0</h4>
+          </div>
+
+          <i class="fa-regular fa-eye text-secondary"></i>
+          <h4 class="text-white">20</h4>
+
+          <i class="fa-regular fa-heart text-secondary"></i>
+          <h4 class="text-white">250</h4>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Footbal T-shirt</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, accusamus?</p>
+          <div class="card-actions justify-end">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/9.png" alt="Shoes" /></figure>
+        <div class="flex justify-center items-center gap-2">
+          <i class="fa-solid fa-star text-secondary"></i>
+          <div>
+            <h4 class="text-white">5.0</h4>
+          </div>
+
+          <i class="fa-regular fa-eye text-secondary"></i>
+          <h4 class="text-white">20</h4>
+
+          <i class="fa-regular fa-heart text-secondary"></i>
+          <h4 class="text-white">250</h4>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">American-Football Helmet</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, sed?</p>
+          <div class="card-actions justify-end">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/10.png" alt="Shoes" /></figure>
+        <div class="flex justify-center items-center gap-2">
+          <i class="fa-solid fa-star text-secondary"></i>
+          <div>
+            <h4 class="text-white">5.0</h4>
+          </div>
+
+          <i class="fa-regular fa-eye text-secondary"></i>
+          <h4 class="text-white">20</h4>
+
+          <i class="fa-regular fa-heart text-secondary"></i>
+          <h4 class="text-white">250</h4>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Football Icon</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, ipsa?</p>
+          <div class="card-actions justify-end">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h1 align="center" class="text-4xl text-white">Clients Questions</h1>
+    <br>
+    <p align="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ea temporibus a enim nesciunt
+      recusandae, magni, ratione officia est repellat esse maxime quidem eligendi in? Excepturi
+      perspiciatis repudiandae dolore rem.</p>
+    <br>
+    <div class="flex justify-center items-center">
+      <img src="/images/11.png" alt="" class="w-48">
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium text-info">
+          Our Eqipments
+        </div>
+        <div class="collapse-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero illum, ab error ad earum, veniam
+            perspiciatis suscipit odit optio blanditiis doloribus voluptates molestiae vero, ullam tempora officiis
+            saepe
+            nemo.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium text-info">
+          Hockey Training
+        </div>
+        <div class="collapse-content">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque assumenda ratione aperiam voluptate sed
+            quis
+            sequi debitis quas facere tempore ipsum ipsa aliquid, ducimus inventore dolores, enim blanditiis iure ut.
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium text-info">
+          Ski Touring
+        </div>
+        <div class="collapse-content">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati repellat dicta dolore inventore
+            eum voluptatum labore illum eligendi laudantium dolorum sequi deleniti veniam odit facere similique, cum sit
+            ad.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium text-info">
+          Private Lessons
+        </div>
+        <div class="collapse-content">
+          <p class="text-neutral-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati
+            repellat dicta dolore inventore
+            eum voluptatum labore illum eligendi laudantium dolorum sequi deleniti veniam odit facere similique, cum sit
+            ad.</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+
+    <h1 align="center" class="text-4xl text-white">Clients Questions</h1>
+    <p align="center" class=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum excepturi
+      perspiciatis amet. Lorem ipsum, dolor sit amet consectetur adsicing elit. Quo pariatur quaerat, consequatur
+      blanditiis ex nisi!</p>
+    <br>
+    <br>
+    <!-- Big Trouble -->
+    <div class="grid grid-cols ">
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text text-success">What is your name?</span>
+        </div>
+        <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full max-w-xs" />
+        <div class="label">
+        </div>
+      </label>
+
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text text-success">Your Email</span>
+        </div>
+        <input type="text" placeholder="example@gmail.com" class="input input-bordered w-full max-w-xs" />
+        <div class="label">
+        </div>
+      </label>
+
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text text-success">Subject</span>
+        </div>
+        <input type="text" placeholder="Enter Your Subject" class="input input-bordered w-full max-w-xs" />
+        <div class="label">
+        </div>
+      </label>
+
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text text-success">Phone Number</span>
+        </div>
+        <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered w-full max-w-xs" />
+        <div class="label">
+        </div>
+      </label>
+    </div>
+
+    <label class="form-control w-full max-w-xs">
+      <div class="label">
+        <span class="label-text text-secondary">Your Message</span>
+      </div>
+      <input type="text" placeholder="Enter Your Message" class="input input-bordered w-full max-w-xs" />
+      <div class="label">
+      </div>
+    </label>
+    <button class="btn btn-wide bg-info text-success-content">Send Message</button>
+
+    <!-- Small Trouble -->
+    <div>
+      <div class="card w-60 bg-base-100 shadow-xl">
+        <div class="card-body">
+          <img src="/images/phone.png" alt="" class="w-10">
+          <h2 class="card-title">Phone Number:</h2>
+          <p class="text-white">(+62) 123-321-543</p>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card w-60 bg-base-100 shadow-xl">
+        <div class="card-body">
+          <img src="/images/mail.png" alt="" class="w-10">
+          <h2 class="card-title">Email:</h2>
+          <p class="text-white">hockeys@support.com</p>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card w-60 bg-base-100 shadow-xl ">
+        <div class="card-body">
+          <img src="/images/map.png" alt="" class="w-10">
+          <h2 class="card-title">Location:</h2>
+          <p class="text-white">152/1 Mohakhali Wireless Gate</p>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <br>
+    <h1 align="center" class="text-4xl">Social Media</h1>
+    <br>
+    <div class="flex justify-center gap-5">
+      <i class=" fa-brands fa-instagram text-3xl"></i>
+      <i class="fa-brands fa-github text-3xl"></i>
+      <i class="fa-brands fa-twitter text-3xl"></i>
+      <i class="fa-brands fa-facebook text-3xl"></i>
+    </div>
+    <br>
+    <hr>
+
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      <nav>
+        <h6 class="footer-title">Services</h6> 
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Company</h6> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Legal</h6> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+      <aside>
+        <p>Copyright © 2024 - All right reserved</p>
+      </aside>
+    </footer>
+</body>
+
+</html>
